@@ -1,0 +1,15 @@
+.container{
+  width: 86%;
+  margin: 0px 100px 50px;
+}
+
+.cards{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap:2rem;
+}
+
+body{
+  overflow-x: hidden;
+}

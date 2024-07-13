@@ -1,0 +1,15 @@
+nav {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: rgb(255 255 255 / 40%);
+  backdrop-filter: blur(8px);
+
+  .logo h1 {
+    font-size: 30px;
+    text-transform: uppercase;
+  }
+}

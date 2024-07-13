@@ -1,0 +1,47 @@
+.radio-button {
+  position: relative;
+  display: inline-block;
+
+  input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    width: 16px;
+    height: 16px;
+    margin: 0;
+    cursor: pointer;
+
+    &:checked + .radio-button-circle::after {
+      background-color: red; 
+    }
+  }
+
+  .radio-button-circle {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    position: relative;
+    display: inline-block;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      background-color: transparent;
+      transition: background-color 0.2s;
+    }
+  }
+}
+
+.error-message {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 4px;
+}
